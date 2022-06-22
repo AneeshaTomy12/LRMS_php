@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRMS</title>
+    <link rel="stylesheet" href="css/register.css">
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <!-- Adding Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-div">
+            <img  class="a" src="images/register.png" alt="login-img">
+            <!-- <i class="icon fa-solid fa-user-lock"></i> -->
+        </div>
+        <div class="form-div">
+            <h1>Register</h1>
+            <form class="form">
+                <input type="text" name="fname" placeholder="First Name" required autofocus>
+                <input type="text" name="lname" placeholder="Last Name" required autofocus>
+                <input type="email" name="email" placeholder="Email" required autofocus>
+                <input type="file" name="file" placeholder="No File chosen" required autofocus>
+                <input type="password" name="password" placeholder="Password" required autofocus>
+                <input type="password" name="cnfrmpassword" placeholder="Confirm Password" required autofocus>
+                <select onchange="changeFunctn()">
+                    <option value="Choose one security question" id="chck" >Choose one security question</option>
+                    <option value="Option A" id="chck">Option A</option>
+                    <option value="Option B" id="chck">Option B</option>
+                    <option value="Option C" id="chck">Option C</option>
+                    <option value="Option D" id="chck">Option D</option>
+                  </select>
+                  <!-- <input type="text" name="fname" id="no" placeholder="Your Answer"  disabled autofocus> -->
+                  <input type="text" name="fname" id="yes" placeholder="Your Answer"   autofocus>
+                  <button id="login-btn">Submit</button>
+                <button id="create-btn"><a href=index.html>Already have an account?</a></button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>
